@@ -32,7 +32,9 @@ def vs_create_http (vs_name, vs_dest, vs_port, vs_pool):
 def vs_create_https (vs_name, vs_dest, vs_port, vs_pool):
     vs1 = bigip.ltm.virtuals.virtual.create(name=vs_name, partition='Common', destination=vs_dest+':'+vs_port, pool=vs_pool, profiles=vs_name+'-ssl-2048', sourceAddressTranslation={'type':'automap'})
 
+#call on function to parse CSV
 def create_vs():
 	open_csv()
 
+#kick it off
 create_vs()
