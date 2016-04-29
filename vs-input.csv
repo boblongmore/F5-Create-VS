@@ -1,0 +1,2 @@
+vs-demo1,1.1.1.1,tcp,80,demo1-pool
+vs-demo2,1.1.1.2,tcp,443,demo2-pool
