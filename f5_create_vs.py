@@ -2,7 +2,7 @@
 
 from f5.bigip import BigIP
 import csv
-bigip = BigIP("172.30.4.16", "admin", "Datalink1")
+bigip = BigIP("172.30.4.16", "admin", "password")
 
 #open nodes.txt document and turn into an array
 def open_csv():
